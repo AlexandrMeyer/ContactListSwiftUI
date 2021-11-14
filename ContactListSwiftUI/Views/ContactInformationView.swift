@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContactInformationView: View {
     
-    let contactList = Person.getContactList()
+    let contactList: [Person]
     
     var body: some View {
         NavigationView {
             List(contactList, id: \.phoneNumber) { personInfo in
-                Section(header: Text("\(personInfo.fullName)")) {
+                Section(header: Text(personInfo.fullName)) {
                     InfoLineView(imageName: "phone", text: personInfo.phoneNumber)
                     InfoLineView(imageName: "tray", text: personInfo.email)
                 }
@@ -26,6 +26,6 @@ struct ContactInformationView: View {
 
 struct ContactInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInformationView()
+        ContactInformationView(contactList: [])
     }
 }

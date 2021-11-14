@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ContactList: View {
     
-    let contactList = Person.getContactList()
+    let contactList: [Person]
     
     var body: some View {
         NavigationView {
             List(contactList, id: \.phoneNumber) { personInfo in
                 NavigationLink(destination: PersonDetailInformation(personInfo: personInfo)) {
-                    Text("\(personInfo.fullName)")
+                    Text(personInfo.fullName)
                         .font(.title3)
                 }
             }
@@ -27,6 +27,6 @@ struct ContactList: View {
 
 struct ContactList_Previews: PreviewProvider {
     static var previews: some View {
-        ContactList()
+        ContactList(contactList: [])
     }
 }
