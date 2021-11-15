@@ -13,11 +13,12 @@ struct ContactInformationView: View {
     
     var body: some View {
         NavigationView {
-            List(contactList, id: \.phoneNumber) { personInfo in
+            List(contactList) { personInfo in
                 Section(header: Text(personInfo.fullName)) {
-                    InfoLineView(imageName: "phone", text: personInfo.phoneNumber)
-                    InfoLineView(imageName: "tray", text: personInfo.email)
+                    Label(personInfo.phoneNumber, systemImage: "phone")
+                    Label(personInfo.email, systemImage: "tray")
                 }
+                .textCase(.none)
             }
             .navigationTitle("Contact List")
         }
@@ -26,6 +27,6 @@ struct ContactInformationView: View {
 
 struct ContactInformationView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactInformationView(contactList: [])
+        ContactInformationView(contactList: Person.getContactList())
     }
 }

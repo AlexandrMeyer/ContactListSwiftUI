@@ -5,7 +5,8 @@
 //  Created by Александр on 11.11.21.
 //
 
-struct Person {
+struct Person: Identifiable {
+    let id: Int
     let firstName: String
     let lastName: String
     let phoneNumber: String
@@ -27,6 +28,7 @@ struct Person {
         
         for index in 0..<iterationCount {
             let person = Person(
+                id: index + 1,
                 firstName: names[index],
                 lastName: surnume[index],
                 phoneNumber: phones[index],

@@ -13,11 +13,8 @@ struct ContactList: View {
     
     var body: some View {
         NavigationView {
-            List(contactList, id: \.phoneNumber) { personInfo in
-                NavigationLink(destination: PersonDetailInformation(personInfo: personInfo)) {
-                    Text(personInfo.fullName)
-                        .font(.title3)
-                }
+            List(contactList) { personInfo in
+                NavigationLink(personInfo.fullName, destination: PersonDetailInformation(personInfo: personInfo))
             }
             .listStyle(.plain)
             .navigationTitle("Contact List")
@@ -27,6 +24,6 @@ struct ContactList: View {
 
 struct ContactList_Previews: PreviewProvider {
     static var previews: some View {
-        ContactList(contactList: [])
+        ContactList(contactList: Person.getContactList())
     }
 }

@@ -16,7 +16,6 @@
 		B5E0CA17273D6AFA0090418C /* ContactInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0CA16273D6AFA0090418C /* ContactInformationView.swift */; };
 		B5E0CA1A273D719D0090418C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0CA19273D719D0090418C /* Person.swift */; };
 		B5E0CA20273D724B0090418C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0CA1F273D724B0090418C /* DataManager.swift */; };
-		B5E0CA22273E89D00090418C /* InfoLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0CA21273E89D00090418C /* InfoLineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		B5E0CA16273D6AFA0090418C /* ContactInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInformationView.swift; sourceTree = "<group>"; };
 		B5E0CA19273D719D0090418C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		B5E0CA1F273D724B0090418C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		B5E0CA21273E89D00090418C /* InfoLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 				B5E0CA12273D6A730090418C /* ContactList.swift */,
 				B5E0CA14273D6AB00090418C /* PersonDetailInformation.swift */,
 				B5E0CA16273D6AFA0090418C /* ContactInformationView.swift */,
-				B5E0CA21273E89D00090418C /* InfoLineView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,7 +198,6 @@
 				B5E0CA13273D6A730090418C /* ContactList.swift in Sources */,
 				B5E0CA04273D5FC40090418C /* ContentView.swift in Sources */,
 				B5E0CA02273D5FC40090418C /* ContactListSwiftUIApp.swift in Sources */,
-				B5E0CA22273E89D00090418C /* InfoLineView.swift in Sources */,
 				B5E0CA17273D6AFA0090418C /* ContactInformationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
